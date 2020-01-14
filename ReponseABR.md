@@ -1,3 +1,9 @@
+# Reponse
+
+## Commande
+grep -R "_from" node_modules/**/package.json  | cut -d ':' -f3  | sort | uniq | cut -d '"' -f2 >> ReponseABR.md
+
+## Résultat
 acorn@6.0.4
 acorn-jsx@5.0.1
 ajv@6.6.2
